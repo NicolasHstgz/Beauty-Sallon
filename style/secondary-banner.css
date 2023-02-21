@@ -1,0 +1,55 @@
+.secondary-banner {
+  padding: 3rem 0;
+}
+
+.secondary-banner img {
+  width: 100%;
+}
+
+.secondary-banner-textarea {
+  padding: 0 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.secondary-banner-textarea h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.secondary-banner-textarea p {
+  color: var(--gray);
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .secondary-banner-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .secondary-banner img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .secondary-banner {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+  }
+
+  .secondary-banner img {
+    width: auto;
+  }
+
+  .secondary-banner h2 {
+    font-size: 36px;
+  }
+
+  .secondary-banner-textarea {
+    padding-left: 5rem;
+  }
+
+}

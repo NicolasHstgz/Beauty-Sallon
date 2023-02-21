@@ -1,0 +1,129 @@
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1.4rem;
+  border-bottom: 2px solid #d8d8d86f;
+}
+
+.header-div-off {
+  display: none;
+}
+
+.main-off {
+  display: none;
+}
+
+.footer-off {
+  display: none;
+}
+
+h1 {
+  font-size: 21px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1 b {
+  font-weight: 700;
+}
+
+h1 b:nth-child(1) {
+  color: var(--black);
+}
+
+h1 b:nth-child(2) {
+  color: var(--primary-color);
+}
+
+.burguer-menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav-off {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -110vw;
+  transition: all 0.4s;
+}
+
+.nav-on {
+  left: 0;
+  transition: all 0.4s;
+}
+
+.burguer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.back-button {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.4rem;
+  cursor: pointer;
+}
+
+.burguer-menu a {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0.2rem 3rem;
+}
+
+.header-nav {
+  display: none;
+} 
+
+@media screen and (min-width: 768px) {
+
+
+  .burguer-menu-icon {
+    display: none;
+  }
+
+  .nav-off {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 60%;
+    margin-right: 2.5rem;
+  }
+
+  .header-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-nav li {
+    transition: all 0.4s;
+  }
+
+  .header-nav li a {
+    padding: 1.5rem 0;
+    font-family: var(--text-font);
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  .header-nav li:hover {
+    transform: scale(0.9);
+  }
+
+  .header-nav li:nth-child(1) a{
+    color: var(--primary-color);
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary-color);
+  }
+}
